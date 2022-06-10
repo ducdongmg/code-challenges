@@ -1,7 +1,9 @@
-Create a function that returns the CSV representation of a two-dimensional numeric array.
+CSV representation of array.
 ===
 
-[source link](https://www.codewars.com/kata/5a34af40e1ce0eb1f5000036/train/javascript)
+[challenge link](https://www.codewars.com/kata/5a34af40e1ce0eb1f5000036/train/javascript)
+
+Create a function that returns the CSV representation of a two-dimensional numeric array.
 
 ```
 input:
@@ -26,7 +28,8 @@ function toCsvText(array) {
 ```
 
 ### best solution
-
+```javascript
 function toCsvText(array) {
    return array.map(list => list.join(',')).join('\n')
 }
+```
