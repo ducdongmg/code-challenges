@@ -33,3 +33,11 @@ function toCsvText(array) {
    return array.map(list => list.join(',')).join('\n')
 }
 ```
+
+#### Note
+Hàm Array.map() trả lại 1 mảng mới từ việc gọi 1 function cho mọi phần tử trong mảng
+
+Syntax:  
+`array.map(function(currentValue, index, arr), thisValue)`
+
+https://www.w3schools.com/jsref/jsref_map.asp

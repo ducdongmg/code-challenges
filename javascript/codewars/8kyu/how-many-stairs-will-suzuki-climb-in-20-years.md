@@ -36,3 +36,11 @@ function stairsIn20(a) {
   return 20 * a.reduce((s, a) => s + a.reduce((s, n) => s + n, 0), 0);
 }
 ```
+
+#### Note
+Hàm Array.reduce() trả lại 1 value là giá trị tích lũy của hàm khi gọi 1 function được chạy cho mọi phần tử trong mảng
+
+Syntax:  
+`array.reduce(function(total, currentValue, currentIndex, arr), initialValue)`
+
+https://www.w3schools.com/jsref/jsref_reduce.asp
