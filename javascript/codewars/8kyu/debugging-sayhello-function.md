@@ -1,5 +1,4 @@
-Debugging sayHello function
-===
+# Debugging sayHello function
 
 [challenge link](https://www.codewars.com/kata/5625618b1fe21ab49f00001f)
 
@@ -10,11 +9,15 @@ Example output:
 `Hello, Mr. Spock`
 
 ### Solution
+
 ```javascript
-const sayHello = (name) => {return `Hello, ${name}`};
+const sayHello = (name) => {
+  return `Hello, ${name}`;
+};
 ```
 
 ### Best solution
+
 ```javascript
-const sayHello = name => `Hello, ${name}`;
+const sayHello = (name) => `Hello, ${name}`;
 ```

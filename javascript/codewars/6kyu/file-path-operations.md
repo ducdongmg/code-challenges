@@ -16,25 +16,19 @@ fm.dirpath(); // output: '/Users/person1/Pictures/'
 ```javascript
 class FileMaster {
   constructor(filepath) {
-    let lastBackSlash = filepath.lastIndexOf("/");
-    this.dirPath = filepath.slice(0, lastBackSlash + 1);
-
-    let fileFullName = filepath.slice(lastBackSlash + 1);
-    let lastDot = fileFullName.lastIndexOf(".");
-    this.fileName = fileFullName.slice(0, lastDot);
-    this.ext = fileFullName.slice(lastDot + 1);
+    this.fileInfo = filepath.match(/(.*)\/(.*)\.(.*)/);
   }
 
   extension() {
-    return this.ext;
+    return this.fileInfo[3];
   }
 
   filename() {
-    return this.fileName;
+    return this.fileInfo[2];
   }
 
   dirpath() {
-    return this.dirPath;
+    return this.fileInfo[1];
   }
 }
 ```

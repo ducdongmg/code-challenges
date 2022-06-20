@@ -1,5 +1,4 @@
-Welcome to the City
-===
+# Welcome to the City
 
 [challenge link](https://www.codewars.com/kata/5302d846be2a9189af0001e4/train/javascript)
 
@@ -14,6 +13,9 @@ sayHello(['John', 'Smith'], 'Phoenix', 'Arizona')`
 This example will return the string `Hello, John Smith! Welcome to Phoenix, Arizona!`
 
 ### solution
+
 ```javascript
-const sayHello = (name, city, state ) => {return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`};
+const sayHello = (name, city, state) => {
+  return `Hello, ${name.join(" ")}! Welcome to ${city}, ${state}!`;
+};
 ```

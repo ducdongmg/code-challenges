@@ -1,11 +1,11 @@
-Find Maximum and Minimum Values of a List
-===
+# Find Maximum and Minimum Values of a List
 
 [challenge link](https://www.codewars.com/kata/577a98a6ae28071780000989)
 
 Your task is to make two functions (max and min, or maximum and minimum, etc., depending on the language) that receive a list of integers as input and return, respectively, the largest and lowest number in that list.
 
 #### Examples (Input -> Output)
+
 ```
 * [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
 * [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
@@ -14,21 +14,31 @@ Your task is to make two functions (max and min, or maximum and minimum, etc., d
 ```
 
 #### Notes
+
 You may consider that there will not be any empty arrays/vectors.
 
 ### Solution
+
 ```javascript
-const max = list => list.sort((a, b) => {return b - a})[0];
-const min = list => list.sort((a, b) => {return a - b})[0];
+const max = (list) =>
+  list.sort((a, b) => {
+    return b - a;
+  })[0];
+const min = (list) =>
+  list.sort((a, b) => {
+    return a - b;
+  })[0];
 ```
 
 ### Best solution
+
 ```javascript
-const max = list => Math.max(...list);
-const min = list => Math.min(...list);
+const max = (list) => Math.max(...list);
+const min = (list) => Math.min(...list);
 ```
 
 #### Note
+
 Đối với hàm sort, nếu chúng ta không truyền tham số nào vào thì nó sẽ sort theo alphabet.
 
 Ngược lại nó có thể nhận tham số là một hàm, trong hàm này chúng ta định nghĩa thứ tự sort.

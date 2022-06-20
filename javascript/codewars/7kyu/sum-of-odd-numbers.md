@@ -1,5 +1,4 @@
-Sum of odd numbers
-===
+# Sum of odd numbers
 
 [challenge link](http)
 
@@ -14,22 +13,24 @@ Given the triangle of consecutive odd numbers:
 ```
 
 Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.: (Input --> Output)
+
 ```
 1 -->  1
 2 --> 3 + 5 = 8
 ```
 
 ### Solution
+
 ```javascript
 function rowSumOddNumbers(n) {
-  let beginNum = (n-1)*n + 1;
-  
+  let beginNum = (n - 1) * n + 1;
+
   let sum = 0;
-  for (let idx = 0; idx < n ; idx++) {
-    sum += beginNum + idx*2;
+  for (let idx = 0; idx < n; idx++) {
+    sum += beginNum + idx * 2;
   }
-  
-	return sum;
+
+  return sum;
 }
 ```
 
@@ -42,6 +43,7 @@ Ta có thể dễ dàng nhận ra mối liên quan giữa số bắt đầu mỗ
 Các số tiếp theo có giá trị bằng số liền kề + 2.
 
 ### Best solution
+
 ```javascript
 function rowSumOddNumbers(n) {
   return Math.pow(n, 3);
@@ -61,6 +63,7 @@ The sum of one row is given by:
 <https://www.quora.com/What-is-the-sum-of-n-consecutive-odd-integers/answer/Xavier-Dectot>
 
 `Inline b[n]:`
+
 ```
 s[n] = n^2 + n(n^2 - n + 1 - 1)
     = n^2 + n(n^2 - n)
